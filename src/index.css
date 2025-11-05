@@ -1,0 +1,5 @@
+@import './styles/variables.css';
+
+/* Importe o restante dos seus estilos */
+@import './styles/navbar.css';
+@import './styles/main.css';
