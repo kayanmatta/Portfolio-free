@@ -74,7 +74,7 @@ const Navbar: React.FC = () => {
           className="navbar-brand"
           onClick={(e) => { e.preventDefault(); scrollToSection('home'); }}
         >
-          SuaEmpresa
+Meu Portfólio
         </a>
         
         <ul className="navbar-nav">
@@ -105,6 +105,7 @@ const Navbar: React.FC = () => {
               Portfolio
             </a>
           </li>
+
           <li className="nav-item">
             <a 
               href="#contact" 
@@ -120,7 +121,7 @@ const Navbar: React.FC = () => {
           className="nav-cta"
           onClick={() => scrollToSection('contact')}
         >
-          Orçamento
+          Vamos Conversar
         </button>
         
         <button 
@@ -168,6 +169,7 @@ const Navbar: React.FC = () => {
               Portfolio
             </a>
           </li>
+
           <li className="mobile-nav-item">
             <a 
               href="#contact" 
@@ -182,7 +184,7 @@ const Navbar: React.FC = () => {
               className="nav-cta mobile-cta"
               onClick={() => scrollToSection('contact')}
             >
-              Orçamento
+              Vamos Conversar
             </button>
           </li>
         </ul>

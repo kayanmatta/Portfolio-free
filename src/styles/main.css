@@ -820,6 +820,18 @@ body {
   transition: all var(--transition-normal);
 }
 
+.project-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform var(--transition-normal);
+}
+
+.project-card:hover .project-image img {
+  transform: scale(1.05);
+}
+
 .project-card:hover .project-image {
   transform: scale(1.05);
 }
@@ -901,32 +913,52 @@ body {
   transform: translateY(-2px);
 }
 
-/* Galeria interativa */
-.project-gallery {
+/* Galeria de Projetos */
+.gallery-images {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2px;
-  margin-top: var(--spacing-lg);
-  border-radius: var(--border-radius-sm);
-  overflow: hidden;
-  height: 100px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--spacing-xl);
+  margin-top: var(--spacing-2xl);
 }
 
 .gallery-item {
-  background-color: var(--bg-light);
-  position: relative;
+  background: rgba(30, 41, 59, 0.7);
+  border-radius: var(--border-radius-lg);
   overflow: hidden;
+  transition: all 0.3s ease;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  position: relative;
+}
+
+.gallery-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 35px rgba(99, 102, 241, 0.4);
 }
 
 .gallery-item img {
   width: 100%;
-  height: 100%;
+  height: 250px;
   object-fit: cover;
-  transition: transform var(--transition-normal);
+  display: block;
+  transition: transform 0.3s ease;
 }
 
-.gallery-item:hover img {
-  transform: scale(1.1);
+.gallery-item-info {
+  padding: var(--spacing-lg);
+}
+
+.gallery-item-info h3 {
+  font-family: var(--font-heading);
+  font-size: var(--font-size-xl);
+  margin-bottom: var(--spacing-sm);
+  color: var(--text-heading);
+  font-weight: var(--font-weight-bold);
+}
+
+.gallery-item-info p {
+  color: var(--text-medium);
+  font-size: var(--font-size-base);
+  line-height: 1.6;
 }
 
 /* Botão de ver projeto com efeito */
@@ -1719,4 +1751,32 @@ body, a, button {
   100% {
     transform: translateY(0px);
   }
+}
+
+/* Footer Social Links */
+.footer-social {
+  display: flex;
+  justify-content: center;
+  gap: var(--spacing-lg);
+  margin: var(--spacing-xl) 0;
+}
+
+.footer-social .social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  color: var(--text-light);
+  transition: all 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.footer-social .social-link:hover {
+  background: var(--gradient-primary);
+  color: white;
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(99, 102, 241, 0.4);
 }

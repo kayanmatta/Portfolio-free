@@ -3,6 +3,13 @@ import Navbar from './components/Navbar';
 import ParticlesBackground from './components/ParticlesBackground';
 import CustomCursor from './components/CustomCursor';
 
+// Import project images
+import portfolioImage from './assets/project-images/imagem do portfolio.png';
+import easyscrumImage from './assets/project-images/easyscrum.jpg.png';
+import botEchoImage from './assets/project-images/botEcho.png';
+import crudJulianaImage from './assets/project-images/CRUD JULIANA.png';
+import diaDosNamoradosImage from './assets/project-images/Diadosnamorados.png';
+
 function App() {
   const [isVisible, setIsVisible] = useState(false);
 
@@ -20,28 +27,28 @@ function App() {
       <section id="home" className="hero">
         <div className={`hero-content ${isVisible ? 'visible' : ''}`}>
           <h1 className="hero-title">
-            Criamos <span>experiências</span> digitais
+            Olá, eu sou <span>Kayan</span>, um estudante apaixonado por tecnologia
           </h1>
           <p className="hero-subtitle">
-            Desenvolvimento de sites e sistemas personalizados para sua empresa se <span className="sales-highlight">destacar na web</span>
+            Estou sempre aprendendo e transformando ideias em <span className="sales-highlight">experiências web reais</span>
           </p>
           <div className="hero-features">
             <div className="feature-badge">
               <span className="feature-icon">✓</span>
-              <span className="feature-text">+10 Anos de Experiência</span>
+              <span className="feature-text">2 Anos de Estudo</span>
             </div>
             <div className="feature-badge">
               <span className="feature-icon">✓</span>
-              <span className="feature-text">+50 Projetos Concluídos</span>
+              <span className="feature-text">10+ Projetos de Estudo</span>
             </div>
             <div className="feature-badge">
               <span className="feature-icon">✓</span>
-              <span className="feature-text">Suporte 24/7</span>
+              <span className="feature-text">Aprendizado Contínuo</span>
             </div>
           </div>
           <div className="hero-buttons">
-            <a href="#portfolio" className="btn btn-primary scale-in">Ver Portfólio</a>
-            <a href="#contact" className="btn btn-secondary scale-in">Fale Conosco</a>
+            <a href="#portfolio" className="btn btn-primary scale-in">Ver Meus Projetos</a>
+            <a href="#contact" className="btn btn-secondary scale-in">Entre em Contato</a>
           </div>
         </div>
         
@@ -63,22 +70,22 @@ function App() {
       {/* About Section */}
       <section id="about" className="section about">
         <div className="container">
-          <h2 className="section-title fade-in-up">Sobre Nós</h2>
+          <h2 className="section-title fade-in-up">Sobre Mim</h2>
           <p className="section-subtitle fade-in-up">
-            Especialistas em criação de <span className="sales-highlight">soluções digitais inovadoras</span>
+            Apaixonado por criar <span className="sales-highlight">soluções digitais inovadoras</span>
           </p>
           
           <div className="about-content">
             <div className="about-text">
-              <h3 className="about-text-title fade-in-left">Especialistas em Criação de Sites</h3>
+              <h3 className="about-text-title fade-in-left">Minha Jornada como Desenvolvedor</h3>
               <p className="about-text-paragraph fade-in-left">
-                Somos uma equipe apaixonada por tecnologia e design, dedicada a criar soluções digitais 
-                que impulsionam o crescimento dos nossos clientes. Com anos de experiência no mercado, 
-                desenvolvemos sites e sistemas que combinam estética, funcionalidade e performance.
+                Sou um estudante de Análise e Desenvolvimento de Sistemas apaixonado por tecnologia e desenvolvimento web. 
+                Nos últimos 2 anos, tenho me dedicado ao aprendizado de tecnologias modernas como HTML, CSS, JavaScript, 
+                React e Next.js. Cada projeto é uma oportunidade de aprender algo novo e superar desafios.
               </p>
               <p className="about-text-paragraph fade-in-left">
-                Trabalhamos com as mais modernas tecnologias do mercado para garantir que seu projeto 
-                tenha a melhor performance, segurança e experiência para seus usuários.
+                Meu foco está em criar soluções que realmente façam a diferença, combinando boas práticas de programação 
+                com uma abordagem centrada no usuário. Acredito que a tecnologia deve ser acessível e intuitiva para todos.
               </p>
               <div className="features fade-in-left">
                 <div className="feature hover-lift">
@@ -99,8 +106,8 @@ function App() {
             <div className="about-image hover-lift">
               <div className="image-placeholder">
                 <div className="stat">
-                  <div className="stat-number">10+</div>
-                  <div className="stat-text">Anos de Experiência</div>
+                  <div className="stat-number">2</div>
+                  <div className="stat-text">Anos de Estudo</div>
                 </div>
               </div>
             </div>
@@ -111,9 +118,9 @@ function App() {
       {/* Services Section */}
       <section id="services" className="section services">
         <div className="container">
-          <h2 className="section-title fade-in-up">Nossos Serviços</h2>
+          <h2 className="section-title fade-in-up">Meus Serviços</h2>
           <p className="section-subtitle fade-in-up">
-            Oferecemos <span className="sales-highlight">soluções completas</span> para sua presença digital
+            Ofereço <span className="sales-highlight">soluções personalizadas</span> para sua presença digital
           </p>
           
           <div className="services-grid">
@@ -125,28 +132,29 @@ function App() {
                   <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                 </svg>
               </div>
-              <h3 className="service-title">Websites Personalizados</h3>
+              <h3 className="service-title">Sites Responsivos</h3>
               <p className="service-description">
-                Desenvolvemos sites únicos que representam a identidade da sua marca e convertem visitantes em clientes.
+                Crio sites responsivos que se adaptam perfeitamente a todos os dispositivos, 
+                garantindo uma experiência consistente para seus visitantes.
               </p>
               <ul className="service-list">
                 <li>
                   <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M5 13l4 4L19 7" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                   </svg>
-                  <span>Design moderno e responsivo</span>
+                  <span>Design moderno e intuitivo</span>
                 </li>
                 <li>
                   <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M5 13l4 4L19 7" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                   </svg>
-                  <span>Otimização para motores de busca</span>
+                  <span>Performance otimizada</span>
                 </li>
                 <li>
                   <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M5 13l4 4L19 7" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                   </svg>
-                  <span>Integração com redes sociais</span>
+                  <span>Integração com APIs</span>
                 </li>
               </ul>
             </div>
@@ -160,28 +168,29 @@ function App() {
                   <path d="M9 17V7m6 10V7" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                 </svg>
               </div>
-              <h3 className="service-title">E-commerce</h3>
+              <h3 className="service-title">Aplicações Web</h3>
               <p className="service-description">
-                Criamos lojas virtuais completas com sistema de pagamento, gestão de estoque e integração com marketplaces.
+                Desenvolvo aplicações web completas com funcionalidades modernas, 
+                focando sempre na experiência do usuário e na performance.
               </p>
               <ul className="service-list">
                 <li>
                   <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M5 13l4 4L19 7" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                   </svg>
-                  <span>Integração com gateways de pagamento</span>
+                  <span>Autenticação de usuários</span>
                 </li>
                 <li>
                   <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M5 13l4 4L19 7" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                   </svg>
-                  <span>Gestão de produtos e estoque</span>
+                  <span>Gestão de dados</span>
                 </li>
                 <li>
                   <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M5 13l4 4L19 7" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                   </svg>
-                  <span>Relatórios de vendas</span>
+                  <span>Dashboard interativo</span>
                 </li>
               </ul>
             </div>
@@ -195,16 +204,17 @@ function App() {
                   <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                 </svg>
               </div>
-              <h3 className="service-title">Sistemas Web</h3>
+              <h3 className="service-title">Sites Institucionais</h3>
               <p className="service-description">
-                Desenvolvemos sistemas personalizados para otimizar processos e aumentar a produtividade da sua empresa.
+                Crio sites institucionais que comunicam efetivamente a identidade da sua marca, 
+                com foco em clareza e impacto visual.
               </p>
               <ul className="service-list">
                 <li>
                   <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M5 13l4 4L19 7" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                   </svg>
-                  <span>Painéis administrativos</span>
+                  <span>Design profissional</span>
                 </li>
                 <li>
                   <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -216,7 +226,7 @@ function App() {
                   <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M5 13l4 4L19 7" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                   </svg>
-                  <span>Relatórios personalizados</span>
+                  <span>Manutenção fácil</span>
                 </li>
               </ul>
             </div>
@@ -227,68 +237,123 @@ function App() {
       {/* Portfolio Section */}
       <section id="portfolio" className="section portfolio">
         <div className="container">
-          <h2 className="section-title fade-in-up">Nosso Portfólio</h2>
+          <h2 className="section-title fade-in-up">Meu Portfólio</h2>
           <p className="section-subtitle fade-in-up">
-            Confira alguns dos <span className="sales-highlight">projetos que desenvolvemos</span>
+            Confira alguns dos <span className="sales-highlight">projetos que criei com dedicação</span>
           </p>
           
           <div className="portfolio-grid">
-            {/* Project 1 */}
+            {/* Project 1 - EasyScrum */}
             <div className="project-card hover-scale">
-              <div className="project-image" style={{background: 'linear-gradient(135deg, #6366f1, #8b5cf6)'}}>
+              <div className="project-image">
+                <img src={easyscrumImage} alt="EasyScrum" style={{width: '100%', height: '100%', objectFit: 'cover'}} />
                 <div className="project-overlay">
-                  <button className="btn-project">Ver Projeto</button>
+                  <a href="https://github.com/EquipeEcho/EasyScrum" target="_blank" rel="noopener noreferrer" className="btn-project">Ver Projeto</a>
                 </div>
               </div>
               <div className="project-content">
-                <h3 className="project-title">E-commerce de Moda</h3>
+                <h3 className="project-title">EasyScrum</h3>
                 <p className="project-description">
-                  Loja virtual completa com sistema de pagamento e gestão de estoque
+                  Projeto desenvolvido em equipe durante o primeiro semestre do curso de ADS. 
+                  Nosso objetivo era criar uma plataforma educacional que tornasse a metodologia ágil Scrum 
+                  mais acessível e compreensível para estudantes e profissionais iniciantes.
                 </p>
                 <div className="tags">
-                  <span className="tag">React</span>
-                  <span className="tag">Node.js</span>
-                  <span className="tag">MongoDB</span>
+                  <span className="tag">HTML</span>
+                  <span className="tag">CSS</span>
+                  <span className="tag">JavaScript</span>
+                  <span className="tag">Python</span>
                 </div>
               </div>
             </div>
             
-            {/* Project 2 */}
+            {/* Project 3 - CRUD */}
             <div className="project-card hover-scale">
-              <div className="project-image" style={{background: 'linear-gradient(135deg, #8b5cf6, #ec4899)'}}>
+              <div className="project-image">
+                <img src={crudJulianaImage} alt="CRUD" style={{width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center top'}} />
                 <div className="project-overlay">
-                  <button className="btn-project">Ver Projeto</button>
+                  <a href="https://github.com/kayanmatta/CRUD" target="_blank" rel="noopener noreferrer" className="btn-project">Ver Projeto</a>
                 </div>
               </div>
               <div className="project-content">
-                <h3 className="project-title">Portal de Notícias</h3>
+                <h3 className="project-title">CRUD</h3>
                 <p className="project-description">
-                  Portal de notícias com sistema de publicação e gerenciamento de conteúdo
+                  Um dos meus primeiros projetos mais completos, desenvolvido em Java com MySQL. 
+                  Este sistema permite o cadastro e gerenciamento de alunos e cursos, com funcionalidades 
+                  para visualizar dados em tabelas e gerar relatórios específicos.
                 </p>
                 <div className="tags">
-                  <span className="tag">Vue.js</span>
-                  <span className="tag">Laravel</span>
+                  <span className="tag">Java</span>
                   <span className="tag">MySQL</span>
+                  <span className="tag">CRUD</span>
                 </div>
               </div>
             </div>
             
-            {/* Project 3 */}
+            {/* Project 4 - Personal Portfolio */}
             <div className="project-card hover-scale">
-              <div className="project-image" style={{background: 'linear-gradient(135deg, #ec4899, #f59e0b)'}}>
+              <div className="project-image">
+                <img src={portfolioImage} alt="Portfólio Pessoal" style={{width: '100%', height: '100%', objectFit: 'cover'}} />
                 <div className="project-overlay">
-                  <button className="btn-project">Ver Projeto</button>
+                  <a href="https://github.com/kayanmatta/Portfolio" target="_blank" rel="noopener noreferrer" className="btn-project">Ver Projeto</a>
                 </div>
               </div>
               <div className="project-content">
-                <h3 className="project-title">Sistema de Gestão</h3>
+                <h3 className="project-title">Portfólio Pessoal</h3>
                 <p className="project-description">
-                  Sistema de gestão empresarial com dashboard e relatórios personalizados
+                  Meu primeiro portfólio pessoal, criado com HTML e CSS. 
+                  Foi um projeto importante para aplicar na prática os conceitos de estruturação 
+                  e estilização que aprendi no início dos meus estudos.
                 </p>
                 <div className="tags">
-                  <span className="tag">React</span>
-                  <span className="tag">Express</span>
-                  <span className="tag">PostgreSQL</span>
+                  <span className="tag">HTML</span>
+                  <span className="tag">CSS</span>
+                  <span className="tag">Responsive Design</span>
+                </div>
+              </div>
+            </div>
+            
+            {/* Project 5 - BotEcho University Project */}
+            <div className="project-card hover-scale">
+              <div className="project-image">
+                <img src={botEchoImage} alt="BotEcho IDE" style={{width: '100%', height: '100%', objectFit: 'cover'}} />
+                <div className="project-overlay">
+                  <a href="https://github.com/EquipeEcho/botEcho" target="_blank" rel="noopener noreferrer" className="btn-project">Ver Projeto</a>
+                </div>
+              </div>
+              <div className="project-content">
+                <h3 className="project-title">BotEcho IDE</h3>
+                <p className="project-description">
+                  Projeto de grupo mais ambicioso da faculdade, uma IDE educacional inovadora. 
+                  Trabalhamos para criar uma ferramenta que ajudasse estudantes e engenheiros 
+                  a escrever e otimizar melhor seus códigos.
+                </p>
+                <div className="tags">
+                  <span className="tag">Java</span>
+                  <span className="tag">AI Integration</span>
+                  <span className="tag">IDE</span>
+                </div>
+              </div>
+            </div>
+            
+            {/* Project 6 - Dia dos Namorados */}
+            <div className="project-card hover-scale">
+              <div className="project-image">
+                <img src={diaDosNamoradosImage} alt="Dia dos Namorados" style={{width: '100%', height: '100%', objectFit: 'cover'}} />
+                <div className="project-overlay">
+                  <a href="https://github.com/kayanmatta/Dia-dos-namorados" target="_blank" rel="noopener noreferrer" className="btn-project">Ver Projeto</a>
+                </div>
+              </div>
+              <div className="project-content">
+                <h3 className="project-title">Dia dos Namorados</h3>
+                <p className="project-description">
+                  Projeto especial criado com carinho para minha namorada no Dia dos Namorados. 
+                  Uma página interativa e personalizada com mensagens e elementos românticos.
+                </p>
+                <div className="tags">
+                  <span className="tag">HTML</span>
+                  <span className="tag">CSS</span>
+                  <span className="tag">JavaScript</span>
                 </div>
               </div>
             </div>
@@ -303,9 +368,9 @@ function App() {
       {/* Contact Section */}
       <section id="contact" className="section contact">
         <div className="container">
-          <h2 className="section-title fade-in-up">Entre em Contato</h2>
+          <h2 className="section-title fade-in-up">Contato</h2>
           <p className="section-subtitle fade-in-up">
-            Vamos <span className="sales-highlight">conversar sobre o seu próximo projeto</span>
+            Vamos <span className="sales-highlight">conversar sobre o seu projeto</span>
           </p>
           
           <div className="contact-container">
@@ -320,7 +385,7 @@ function App() {
                 </div>
                 <div className="contact-details">
                   <h4>Telefone</h4>
-                  <p>(11) 99999-9999</p>
+                  <p>(22) 98866-8600</p>
                 </div>
               </div>
               
@@ -332,7 +397,7 @@ function App() {
                 </div>
                 <div className="contact-details">
                   <h4>Email</h4>
-                  <p>contato@suaempresa.com</p>
+                  <p>kayan.devweb@gmail.com</p>
                 </div>
               </div>
               
@@ -345,24 +410,24 @@ function App() {
                 </div>
                 <div className="contact-details">
                   <h4>Endereço</h4>
-                  <p>São Paulo, SP</p>
+                  <p>São José dos Campos, SP</p>
                 </div>
               </div>
               
               <div className="social-links fade-in-left">
-                <a href="#" className="social-link">
+                <a href="https://github.com/kayanmatta" target="_blank" rel="noopener noreferrer" className="social-link" aria-label="GitHub">
                   <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"/>
+                    <path d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0012 2z"/>
                   </svg>
                 </a>
-                <a href="#" className="social-link">
+                <a href="https://www.linkedin.com/in/kayan-matta" target="_blank" rel="noopener noreferrer" className="social-link" aria-label="LinkedIn">
                   <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm13.5-12.268a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z"/>
+                    <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
                   </svg>
                 </a>
-                <a href="#" className="social-link">
+                <a href="https://wa.me/5522988668600" target="_blank" rel="noopener noreferrer" className="social-link" aria-label="WhatsApp">
                   <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
                   </svg>
                 </a>
               </div>
@@ -417,9 +482,9 @@ function App() {
       {/* Testimonials Section */}
       <section className="section testimonials">
         <div className="container">
-          <h2 className="section-title fade-in-up">O que nossos clientes dizem</h2>
+          <h2 className="section-title fade-in-up">Depoimentos</h2>
           <p className="section-subtitle fade-in-up">
-            Veja o que empresas parceiras acham do nosso trabalho
+            Veja o que alguns clientes acharam do meu trabalho
           </p>
           
           <div className="testimonials-grid">
@@ -427,12 +492,12 @@ function App() {
             <div className="testimonial-card hover-lift">
               <div className="testimonial-content">
                 <p className="testimonial-text">
-                  "O trabalho da equipe foi excepcional. Entregaram nosso projeto antes do prazo e com qualidade acima da média."
+                  "Fiquei impressionado com o resultado do projeto. O desenvolvedor foi muito atencioso e entregou exatamente o que eu precisava."
                 </p>
                 <div className="testimonial-author">
                   <div className="author-info">
-                    <h4 className="author-name">Carlos Silva</h4>
-                    <p className="author-position">CEO, TechSolutions</p>
+                    <h4 className="author-name">Maria Silva</h4>
+                    <p className="author-position">Cliente Satisfeito</p>
                   </div>
                 </div>
               </div>
@@ -442,12 +507,12 @@ function App() {
             <div className="testimonial-card hover-lift">
               <div className="testimonial-content">
                 <p className="testimonial-text">
-                  "Transformaram nossa presença digital. O e-commerce que criaram aumentou nossas vendas em 150% no primeiro mês."
+                  "O site ficou incrível! Superou minhas expectativas em todos os aspectos. Recomendo fortemente os serviços."
                 </p>
                 <div className="testimonial-author">
                   <div className="author-info">
-                    <h4 className="author-name">Maria Oliveira</h4>
-                    <p className="author-position">Diretora de Marketing, ModaStyle</p>
+                    <h4 className="author-name">João Santos</h4>
+                    <p className="author-position">Empreendedor</p>
                   </div>
                 </div>
               </div>
@@ -457,12 +522,12 @@ function App() {
             <div className="testimonial-card hover-lift">
               <div className="testimonial-content">
                 <p className="testimonial-text">
-                  "Profissionais altamente qualificados e comprometidos. Superaram todas as nossas expectativas em termos de design e funcionalidade."
+                  "Trabalhar com este desenvolvedor foi uma excelente experiência. Profissionalismo e qualidade em cada detalhe."
                 </p>
                 <div className="testimonial-author">
                   <div className="author-info">
-                    <h4 className="author-name">Roberto Santos</h4>
-                    <p className="author-position">Gerente de TI, FinançasPro</p>
+                    <h4 className="author-name">Ana Costa</h4>
+                    <p className="author-position">Designer Gráfica</p>
                   </div>
                 </div>
               </div>
@@ -474,16 +539,33 @@ function App() {
       {/* Footer */}
       <footer className="footer">
         <div className="container">
-          <a href="#home" className="footer-brand scale-in">SuaEmpresa</a>
+          <a href="#home" className="footer-brand scale-in">Meu Portfólio</a>
           <p className="footer-text fade-in-up">
-            Criando experiências digitais que transformam negócios
+            Criando experiências digitais que transformam ideias em realidade
           </p>
           <div className="footer-cta">
-            <p className="footer-cta-text">Pronto para transformar sua presença digital?</p>
-            <a href="#contact" className="btn btn-primary footer-cta-button">Iniciar Projeto</a>
+            <p className="footer-cta-text">Pronto para dar vida à sua ideia?</p>
+            <a href="#contact" className="btn btn-primary footer-cta-button">Vamos Conversar</a>
+          </div>
+          <div className="social-links footer-social">
+            <a href="https://github.com/kayanmatta" target="_blank" rel="noopener noreferrer" className="social-link" aria-label="GitHub">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0012 2z"/>
+              </svg>
+            </a>
+            <a href="https://www.linkedin.com/in/kayan-matta" target="_blank" rel="noopener noreferrer" className="social-link" aria-label="LinkedIn">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+              </svg>
+            </a>
+            <a href="https://wa.me/5522988668600" target="_blank" rel="noopener noreferrer" className="social-link" aria-label="WhatsApp">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+              </svg>
+            </a>
           </div>
           <div className="footer-copyright fade-in-up">
-            © {new Date().getFullYear()} SuaEmpresa. Todos os direitos reservados.
+            © {new Date().getFullYear()} Meu Portfólio. Todos os direitos reservados.
           </div>
         </div>
       </footer>
