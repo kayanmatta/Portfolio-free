@@ -478,6 +478,15 @@
   .navbar-brand {
     font-size: var(--font-size-xl);
   }
+  
+  /* Corrige o problema do dark mode no mobile */
+  .navbar {
+    background: rgba(15, 23, 42, 0.95) !important;
+  }
+  
+  .mobile-menu {
+    background: rgba(15, 23, 42, 0.98) !important;
+  }
 }
 
 @media (max-width: 480px) {
@@ -487,5 +496,12 @@
   
   .mobile-menu {
     padding: var(--spacing-md);
+  }
+  
+  /* Garante contraste adequado em telas pequenas */
+  .nav-link,
+  .mobile-nav-link,
+  .navbar-brand {
+    color: var(--text-light) !important;
   }
 }

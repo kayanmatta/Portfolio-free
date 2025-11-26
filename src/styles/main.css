@@ -1550,12 +1550,39 @@ textarea.form-control:focus {
     width: 100%;
     max-width: 350px;
   }
+  
+  /* Corrige o problema de visibilidade de texto no mobile */
+  body,
+  .hero-title,
+  .hero-subtitle,
+  .section-title,
+  .section-subtitle,
+  .about-text-title,
+  .about-text-paragraph,
+  .service-title,
+  .service-description,
+  .project-title,
+  .project-description {
+    color: var(--text-light) !important;
+  }
+  
+  /* Garante fundo escuro consistente no mobile */
+  body,
+  .hero,
+  .about,
+  .services,
+  .portfolio,
+  .contact,
+  .testimonials,
+  .footer {
+    background-color: var(--bg-dark) !important;
+  }
 }
 
 @media (max-width: 580px) {
   .form-grid {
     grid-template-columns: 1fr;
-    gap: 0; 
+    gap: var(--spacing-md); 
   }
   
   .section {
@@ -1564,6 +1591,42 @@ textarea.form-control:focus {
   
   .hero-title {
     font-size: var(--font-size-4xl);
+  }
+  
+  /* Corrige problemas de layout em telas pequenas */
+  .about-content,
+  .contact-container {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-xl);
+  }
+  
+  .portfolio-grid,
+  .services-grid,
+  .testimonials-grid {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-xl);
+  }
+  
+  .project-card,
+  .service-card,
+  .testimonial-card {
+    max-width: 100%;
+  }
+  
+  /* Ajusta o espaçamento dos formulários */
+  .contact-form .form-group {
+    margin-bottom: var(--spacing-md);
+  }
+  
+  /* Ajusta o tamanho dos botões em telas pequenas */
+  .btn {
+    padding: var(--spacing-md) var(--spacing-xl);
+    font-size: var(--font-size-base);
+  }
+  
+  /* Ajusta o título da seção para telas pequenas */
+  .section-title {
+    font-size: var(--font-size-3xl);
   }
 }
 

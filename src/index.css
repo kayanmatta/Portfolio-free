@@ -1,17 +1,5 @@
 @import './styles/variables.css';
 
-/* Adiciona suporte para dark mode do sistema */
-@media (prefers-color-scheme: dark) {
-  :root {
-    --bg-dark: #0f172a;
-    --bg-medium: #1e293b;
-    --bg-light: #334155;
-    --text-light: #f1f5f9;
-    --text-medium: #cbd5e1;
-    --text-dark: #94a3b8;
-  }
-}
-
 /* Importe o restante dos seus estilos */
 @import './styles/navbar.css';
 @import './styles/main.css';
