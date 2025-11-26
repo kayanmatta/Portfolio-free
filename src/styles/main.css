@@ -1583,6 +1583,34 @@ textarea.form-control:focus {
     color: var(--text-light) !important;
   }
   
+  /* Corrige gradientes muito escuros no mobile */
+  .hero-title {
+    background: linear-gradient(135deg, var(--text-light), var(--primary-color)) !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    background-clip: text !important;
+  }
+  
+  .hero-title span {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color)) !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    background-clip: text !important;
+    text-shadow: 0 0 15px rgba(99, 102, 241, 0.2) !important;
+  }
+  
+  .section-title {
+    color: var(--text-heading) !important;
+    text-shadow: 0 0 10px rgba(99, 102, 241, 0.15) !important;
+  }
+  
+  .stat-number {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color)) !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    background-clip: text !important;
+  }
+  
   /* Garante fundo escuro consistente no mobile */
   body,
   .hero,
@@ -1644,6 +1672,29 @@ textarea.form-control:focus {
   /* Ajusta o título da seção para telas pequenas */
   .section-title {
     font-size: var(--font-size-3xl);
+  }
+  
+  /* Corrige gradientes em telas muito pequenas */
+  .hero-title,
+  .hero-title span,
+  .section-title,
+  .stat-number {
+    background: linear-gradient(135deg, var(--text-light), var(--primary-color)) !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    background-clip: text !important;
+  }
+  
+  .sales-highlight {
+    background: linear-gradient(120deg, var(--primary-color), var(--secondary-color)) !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    background-clip: text !important;
+  }
+  
+  .tag:hover {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color)) !important;
+    color: white !important;
   }
 }
 
@@ -1711,6 +1762,37 @@ body::-webkit-scrollbar-thumb {
 body::-webkit-scrollbar-thumb:hover {
   background: var(--gradient-primary);
   filter: brightness(1.2);
+}
+
+/* Correções específicas para gradientes em dispositivos móveis */
+@media (max-width: 480px) {
+  /* Ajusta gradientes para melhor visibilidade em telas pequenas */
+  .hero-title,
+  .hero-title span,
+  .section-title,
+  .stat-number,
+  .sales-highlight {
+    background: linear-gradient(135deg, var(--text-light), var(--primary-color)) !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    background-clip: text !important;
+  }
+  
+  /* Ajusta a opacidade dos gradientes de fundo */
+  .hero::before,
+  .about::before,
+  .services::before,
+  .portfolio::before {
+    opacity: 0.7 !important;
+  }
+  
+  /* Ajusta os cards para melhor contraste */
+  .project-card,
+  .service-card,
+  .testimonial-card {
+    background: rgba(30, 41, 59, 0.9) !important;
+    border: 1px solid rgba(99, 102, 241, 0.3) !important;
+  }
 }
 
 /* =========================================================================
