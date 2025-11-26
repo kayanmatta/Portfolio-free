@@ -503,7 +503,17 @@
   }
   
   .mobile-menu {
-    padding: var(--spacing-md);
+    padding: var(--spacing-sm);
+  }
+  
+  .mobile-nav-link {
+    padding: var(--spacing-sm);
+    font-size: var(--font-size-base);
+  }
+  
+  .mobile-cta {
+    padding: var(--spacing-sm);
+    font-size: var(--font-size-sm);
   }
   
   /* Garante contraste adequado em telas pequenas */
@@ -511,5 +521,14 @@
   .mobile-nav-link,
   .navbar-brand {
     color: var(--text-light) !important;
+  }
+  
+  /* Melhora o design do menu mobile */
+  .mobile-menu {
+    border-radius: 0 0 var(--border-radius) var(--border-radius);
+  }
+  
+  .mobile-nav-item {
+    margin-bottom: var(--spacing-xs);
   }
 }

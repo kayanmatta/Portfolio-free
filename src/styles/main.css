@@ -1537,35 +1537,66 @@ textarea.form-control:focus {
   }
   
   .hero-title {
-    font-size: var(--font-size-6xl);
-  }
-}
-
-@media (max-width: 768px) {
-  .hero-title {
     font-size: var(--font-size-5xl);
-  }
-  
-  .hero-subtitle {
-    font-size: var(--font-size-xl);
   }
   
   .section-title {
     font-size: var(--font-size-4xl);
   }
   
+  .about-text-title {
+    font-size: var(--font-size-3xl);
+  }
+  
+  .service-title {
+    font-size: var(--font-size-2xl);
+  }
+  
+  .project-title {
+    font-size: var(--font-size-2xl);
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: var(--font-size-4xl);
+    line-height: 1.2;
+    margin-bottom: var(--spacing-md);
+  }
+  
+  .hero-subtitle {
+    font-size: var(--font-size-lg);
+    line-height: 1.5;
+    margin-bottom: var(--spacing-xl);
+  }
+  
+  .section-title {
+    font-size: var(--font-size-3xl);
+  }
+  
   .btn {
     padding: var(--spacing-md) var(--spacing-lg);
+    width: 100%;
+    max-width: 300px;
   }
 
   .hero-buttons {
     flex-direction: column;
     align-items: center;
+    gap: var(--spacing-md);
   }
   
-  .btn {
-    width: 100%;
-    max-width: 350px;
+  .hero-features {
+    gap: var(--spacing-md);
+    margin-top: var(--spacing-lg);
+  }
+  
+  .feature-badge {
+    padding: var(--spacing-xs) var(--spacing-sm);
+  }
+  
+  .feature-text {
+    font-size: var(--font-size-xs);
   }
   
   /* Corrige o problema de visibilidade de texto no mobile */
@@ -1611,6 +1642,16 @@ textarea.form-control:focus {
     background-clip: text !important;
   }
   
+  /* Simplifica o design da seção Hero para mobile */
+  .hero {
+    padding-top: 80px;
+    padding-bottom: 40px;
+  }
+  
+  .hero-content {
+    padding: 0 calc(var(--container-padding) - 10px);
+  }
+  
   /* Garante fundo escuro consistente no mobile */
   body,
   .hero,
@@ -1635,21 +1676,21 @@ textarea.form-control:focus {
   }
   
   .hero-title {
-    font-size: var(--font-size-4xl);
+    font-size: var(--font-size-3xl);
   }
   
   /* Corrige problemas de layout em telas pequenas */
   .about-content,
   .contact-container {
     grid-template-columns: 1fr;
-    gap: var(--spacing-xl);
+    gap: var(--spacing-lg);
   }
   
   .portfolio-grid,
   .services-grid,
   .testimonials-grid {
     grid-template-columns: 1fr;
-    gap: var(--spacing-xl);
+    gap: var(--spacing-lg);
   }
   
   .project-card,
@@ -1671,7 +1712,43 @@ textarea.form-control:focus {
   
   /* Ajusta o título da seção para telas pequenas */
   .section-title {
-    font-size: var(--font-size-3xl);
+    font-size: var(--font-size-2xl);
+  }
+  
+  /* Melhora o design da seção About para mobile */
+  .about-text-title {
+    font-size: var(--font-size-2xl);
+  }
+  
+  .about-text-paragraph {
+    font-size: var(--font-size-base);
+    line-height: 1.6;
+  }
+  
+  .features {
+    gap: var(--spacing-md);
+  }
+  
+  .feature {
+    padding: var(--spacing-xs) var(--spacing-sm);
+    font-size: var(--font-size-sm);
+  }
+  
+  /* Melhora o design da seção Services para mobile */
+  .service-card {
+    padding: var(--spacing-xl);
+  }
+  
+  .service-title {
+    font-size: var(--font-size-xl);
+  }
+  
+  .service-description {
+    font-size: var(--font-size-base);
+  }
+  
+  .service-list li {
+    margin-bottom: var(--spacing-sm);
   }
   
   /* Corrige gradientes em telas muito pequenas */
@@ -1792,6 +1869,54 @@ body::-webkit-scrollbar-thumb:hover {
   .testimonial-card {
     background: rgba(30, 41, 59, 0.9) !important;
     border: 1px solid rgba(99, 102, 241, 0.3) !important;
+  }
+  
+  /* Melhora o design da seção Portfolio para mobile */
+  .project-title {
+    font-size: var(--font-size-lg);
+  }
+  
+  .project-description {
+    font-size: var(--font-size-sm);
+  }
+  
+  .project-image {
+    height: 200px;
+  }
+  
+  .tag {
+    padding: var(--spacing-xs) var(--spacing-sm);
+    font-size: var(--font-size-xs);
+  }
+  
+  /* Melhora o design da seção Contact para mobile */
+  .contact-item {
+    margin-bottom: var(--spacing-lg);
+  }
+  
+  .contact-details h4 {
+    font-size: var(--font-size-base);
+  }
+  
+  .contact-details p {
+    font-size: var(--font-size-sm);
+  }
+  
+  .social-title {
+    font-size: var(--font-size-base);
+  }
+  
+  .social-links {
+    gap: var(--spacing-md);
+  }
+  
+  .form-control {
+    padding: var(--spacing-sm);
+    font-size: var(--font-size-sm);
+  }
+  
+  textarea.form-control {
+    min-height: 120px;
   }
 }
 
