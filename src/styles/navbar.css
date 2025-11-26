@@ -13,6 +13,7 @@
   max-width: var(--max-width);
   margin: 20px auto;
   box-shadow: 0 4px 15px rgba(99, 102, 241, 0.1);
+  overflow-x: hidden;
 }
 
 .navbar::before {
@@ -53,6 +54,8 @@
   animation: navbarFix 0.3s ease-out;
   width: 90%;
   margin: 0 auto;
+  max-width: calc(100vw - 10%);
+  overflow-x: hidden;
 }
 
 @keyframes navbarFix {
@@ -288,6 +291,8 @@
   overflow: hidden;
   margin-top: 10px;
   border-radius: var(--border-radius);
+  max-width: 100vw;
+  overflow-x: hidden;
 }
 
 .mobile-menu::before {
@@ -466,6 +471,7 @@
     left: 2.5%;
     right: 2.5%;
     margin: 10px auto;
+    max-width: calc(100vw - 5%);
   }
   
   .navbar.fixed {
@@ -473,6 +479,7 @@
     left: 2.5%;
     right: 2.5%;
     width: 95%;
+    max-width: calc(100vw - 5%);
   }
   
   .navbar-brand {
@@ -486,6 +493,7 @@
   
   .mobile-menu {
     background: rgba(15, 23, 42, 0.98) !important;
+    max-width: 100vw;
   }
 }
 
